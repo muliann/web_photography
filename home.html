@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        body {
+            background-color: #f0f8ff;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            color: #000000;
+            letter-spacing: 2px;
+            height: 8vh;
+            background-color: white;
+        }
+        
+        .links {
+            display: flex;
+            width: 30%;
+            align-items: center;
+        }
+        
+        .links li {
+            list-style: none;
+            padding: 10px;
+        }
+        
+        .links li:hover {
+            background-color: grey;
+        }
+        
+        .links a {
+            text-decoration: none;
+        }
+        
+        .links a:hover {
+            opacity: 0.3;
+        }
+        
+        #menu {
+            display: none;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        #menu div {
+            width: 25px;
+            height: 3px;
+            background-color: #000000;
+            margin: 5px;
+            display: block;
+        }
+        
+        @media screen and(max-width:1040px) {
+            .links {
+                width: 50%
+            }
+        }
+        
+        @media screen and (max-width:768px) {
+            body {
+                overflow-x: hidden;
+            }
+            .links {
+                position: absolute;
+                top: 8vh;
+                left: 0px;
+                height: 52vh;
+                width: 40%;
+                display: flex;
+                background-color: black;
+                flex-direction: column;
+                transform: translateX(-100%);
+            }
+            #menu {
+                display: block;
+            }
+            .links li {
+                align-items: center;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <div onclick="menu" id="menu" role="menu">
+            <div class="line1" role="line"></div>
+            <div class="line1" role="line"></div>
+            <div class="line1" role="line"></div>
+        </div>
+
+        <ul class="links">
+            <li><a href="home.html" class="home"><i class="fas fa-home">Home</i></a></li>
+            <li><a href="About.html" class="abt"><i class="fas fa-camera">About</i></a></li>
+            <li><a href="Contacts.html" class="contacts"><i class="fas fa-mobile">Contacts</i></a></li>
+            <li><a href="sign.html" class="sign"><i class="fas fa">Sign In/Up </i></a></li>
+        </ul>
+        <h1><i>ab's PHOTOGRAPHY</i></h1>
+    </nav>
+    <div>
+        <footer>
+            <p> </p>
+        </footer>
+    </div>
+</body>
+
+</html>
