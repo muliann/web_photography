@@ -1,0 +1,51 @@
+body {
+    background-color: #f0f8ff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.toggle {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.menu {
+    position: relative;
+    background-color: white;
+    display: none;
+    transition: 0.5s;
+}
+
+.menu a {
+    color: darkturquoise;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: grey;
+}
+
+.box {
+    width: 360px;
+    padding: 20px;
+    margin: 200px 500px;
+}
+
+form {
+    width: 360px;
+    padding: 20px;
+    margin: 200px 500px;
+    border: 5px blanchedalmond;
+    text-align: center;
+}

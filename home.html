@@ -6,113 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <style>
-        body {
-            background-color: #f0f8ff;
-        }
-        
-        nav {
-            display: flex;
-            align-items: center;
-            color: #000000;
-            letter-spacing: 2px;
-            height: 8vh;
-            background-color: white;
-        }
-        
-        .links {
-            display: flex;
-            width: 30%;
-            align-items: center;
-        }
-        
-        .links li {
-            list-style: none;
-            padding: 10px;
-        }
-        
-        .links li:hover {
-            background-color: grey;
-        }
-        
-        .links a {
-            text-decoration: none;
-        }
-        
-        .links a:hover {
-            opacity: 0.3;
-        }
-        
-        #menu {
-            display: none;
-        }
-        
-        h1 {
-            text-align: center;
-        }
-        
-        #menu div {
-            width: 25px;
-            height: 3px;
-            background-color: #000000;
-            margin: 5px;
-            display: block;
-        }
-        
-        @media screen and(max-width:1040px) {
-            .links {
-                width: 50%
-            }
-        }
-        
-        @media screen and (max-width:768px) {
-            body {
-                overflow-x: hidden;
-            }
-            .links {
-                position: absolute;
-                top: 8vh;
-                left: 0px;
-                height: 52vh;
-                width: 40%;
-                display: flex;
-                background-color: black;
-                flex-direction: column;
-                transform: translateX(-100%);
-            }
-            #menu {
-                display: block;
-            }
-            .links li {
-                align-items: center;
-                padding: 30px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="home.css">
+
 </head>
 
 <body>
-    <nav>
+    <h1><i>ab's PHOTOGRAPHY</i></h1>
 
-        <div onclick="menu" id="menu" role="menu">
-            <div class="line1" role="line"></div>
-            <div class="line1" role="line"></div>
-            <div class="line1" role="line"></div>
-        </div>
-
-        <ul class="links">
-            <li><a href="home.html" class="home"><i class="fas fa-home">Home</i></a></li>
-            <li><a href="About.html" class="abt"><i class="fas fa-camera">About</i></a></li>
-            <li><a href="Contacts.html" class="contacts"><i class="fas fa-mobile">Contacts</i></a></li>
-            <li><a href="sign.html" class="sign"><i class="fas fa">Sign In/Up </i></a></li>
+    <div class="dropdown" role="dropdown">
+        <span class="toggle" role="toggle" onclick="openNav()">&#9776; </span>
+        <ul class="menu" id="menu" role="div">
+            <a href="#home" class="home"><i class="fas fa-home">Home</i></a>
+            <a href="#About" class="abt"><i class="fas fa-camera">About</i></a>
+            <a href="#booking" class="bookings"><i class="fas fa"> Bookings </i></a>
+            <a href="#Contacts" class="contacts"><i class="fas fa-mobile">Contacts</i></a>
+            <a href="#sign" class="sign"><i class="fas fa">Sign In/Up </i></a>
         </ul>
-        <h1><i>ab's PHOTOGRAPHY</i></h1>
-    </nav>
-    <div>
-        <footer>
-            <p> </p>
-        </footer>
     </div>
+
+    <form id="booking">
+        <table>
+            <tr>
+                <td>event:</td>
+                <td><input type="text" role="EventName"> </td>
+            </tr>
+            <tr>
+                <td>time:</td>
+                <td><input type="text" role="time"></td>
+            </tr>
+            <tr>
+                <td>place:</td>
+                <td><input type="text" role="loc"></td>
+            </tr>
+            <tr>
+                <td>client number:</td>
+                <td><input type="text" role="number"></td>
+            </tr>
+            <tr>
+                <td>Details</td>
+                <td>
+                    <textarea name="Details" id="" cols="22" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" role="">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <form id="sign">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" role="name"></td>
+            </tr>
+            <tr>
+                <td> Email</td>
+                <td><input type="text" role="Email"> </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" role="passward"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" role="submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <div class="box" role="box" id="#contacts">
+        ab's Photography <br> Head Office,<br> P.O BOX <br> Email us: <br>
+        <a href="#" style="color: #0000ff; text-decoration: none;"><i class="fas fa-envelope">info@ABS.com</i></a>
+    </div>
+
+
+
+
+    <script src="home.js">
+    </script>
+
+
 </body>
 
 </html>
