@@ -1,0 +1,59 @@
+body {
+    background-color: #f0f8ff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.toggle {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.menu {
+    position: relative;
+    background-color: white;
+    display: none;
+    transition: 0.5s;
+}
+
+.menu a {
+    color: darkturquoise;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: grey;
+}
+
+#sign {
+    background-color: black;
+    color: #00ced1;
+    padding: 30px 500px;
+    margin-bottom: 20px;
+}
+
+#booking {
+    background-color: black;
+    color: #00ced1;
+    padding: 30px 500px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: black;
+    color: #00ced1;
+    padding: 15px 500px;
+    bottom: 0px;
+    margin-bottom: 10px;
+}
